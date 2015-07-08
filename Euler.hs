@@ -19,3 +19,8 @@ problem2 :: Int -> Int
 problem2 n = sum $ takeWhile (<n) evenFib
     where
         evenFib = [ fibonacci x | x <- [2..], even $ fibonacci x ]
+
+-- The prime factors of 13195 are 5, 7, 13, and 29
+-- What is the largest prime factor or the number 600851475143?
+problem3 :: Int -> Int
+problem3 n = maximum $ primeFactors n
